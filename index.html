@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Centro logistico</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <figure><img class="logo" src="images/logoRMMtransportes.png" alt="RMM Transportes"></figure>
+
+    <nav id='menu'>
+      <ul>
+        <li><a href='tabela.html'>Orçamento</a>
+        </li>
+        <li><a href='http://'>Serviços</a>
+        </li>
+        <li><a href='http://'>Sobre Nós</a></li>
+        <li><a href='http://'>Contato</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend>
+          <b> </b>
+        </legend>
+        <br>
+
+        <div class="inputbox">
+          <input type="text" name="tipo do transporte" id="tipo do transporte " class="inputCar" required>
+          <label for="tipo" class="inputlabel">Modelo do veiculo </label>
+        </div>
+
+
+        <p> Tipo de veiculo:</p>
+
+        <input type="radio" name="car" class="" value="preto">
+        <label for="preto">Carro</label>
+        <br>
+        <input type="radio" name="car" class="cor" value="branco">
+        <label for="branco">Van</label>
+        <br>
+        <input type="radio" name="car" class="cor" value="vermelho">
+        <label for="vermelho">Caminhão</label>
+        <br><br>
+
+        <br>
+        <div class="inputbox">
+          <input type="text" name="Placa  do transporte" id="Placa do transporte" class="inputCar" required>
+          <label for="Placa" class="inputlabel">Placa do seu veiculo </label>
+        </div>
+
+
+        <p>Carga perigosa?</p>
+        <input type="checkbox" name="comum" id="comum" class="">
+        <label for="comum" class="checkbox"> Sim</label>
+        <br><br>
+
+        <br>
+        <div class="inputbox">
+          <input type="text" name="local  do transporte" id="local do transporte" class="inputCar" required>
+          <label for="local" class="inputlabel">Local de retirada</label>
+        </div>
+        <br>
+        <label for="number" class="qtd">Quantidade de peças:</label>
+        <input type="number" name="number" id="number" min="0">
+        <br>
+
+        <label class="labelDespacho" for="despacho">Data da retirada :</label>
+        <input type="date" name="Data  do despacho" id="despacho">
+        <br><br>
+
+        <div>
+          <button class="button-cadastrar"> <img src="images/SlvR.png" alt="" width="19px"> Cadastrar entrega </button>
+        </div>
+        <div>
+          <button class="button-clear"><img src="images/delete.png" alt="" width="19px" onclick="limpar()"> Limpar dados</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <table class="tabela">
+    <tr>
+    
+    </tr>
+    <tr>
+        <th>Modelo do veiculo</th>
+        <th>placa</th>
+        <th>carga perigosa</th>
+        <th>local de retirada</th>
+        <th>quantidades de peças</th>
+        <th>data da retirada</th>
+    </tr>
+    <tr>
+        <td> scania</td>
+        <td class = "car"> HIY-5567</td>
+        <td class= "preco luxo">Não</td>
+        <td>Salto-sp</td>
+        <td>9</td>
+        <td>12/09/2022</td>
+    </tr>
+
+    <tr>
+      <td> mercedes</td>
+      <td class = "car"> HIY-5567</td>
+      <td class= "preco luxo">Sim</td>
+        <td>Indaiatuba-sp</td>
+        <td>4</td>
+        <td>12/03/2022</td>
+        
+    </tr>
+
+    <tr>
+        <td> volkswagem </td>
+        <td class = "car"> HIY-5567</td>
+      <td class= "preco luxo">Sim</td>
+        <td>Sorocaba-sp</td>
+        <td>6</td>
+        <td>10/04/2022</td>
+        
+
+    </tr>
+
+        <tr>
+          <td>kia</td>
+          <td class = "car"> HIY-5567</td>
+          <td class= "preco luxo">Não</td>
+            <td>Itu-sp</td>
+            <td>7</td>
+            <td>02/08/2022</td>
+        </tr>
+        
+        <td><button class="buttontable"><img src="images/SlvR.png" alt="" width="19px">Salvar</button> </td>
+        <td><button class="buttontable"><img src="images/delete.png" width="19px">Apagar</button> </td>
+        <td><button class="buttontable"><img src="images/apply-300x300.png" alt="" width="19px">Editar</button> </td>
+    </table>
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+.header {
+    background-color: black;
+    margin: -1em;
+    height: 150px;
+}
+
+.logo {
+    margin: -2em;
+    padding: 1em;
+    padding-left: 4em;
+    height: 190px;
+}
+
+body {
+    size: 60%;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #FFFFFF;
+    color: green;
+}
+
+.box {
+    size: 100%;
+    display: block;
+    width: auto;
+    margin-top: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 15px;
+    color: black;
+}
+
+fieldset {
+
+    border: transparent;
+
+}
+
+legend {
+
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    border: transparent;
+}
+
+.inputbox {
+
+    position: relative;
+
+}
+
+.inputCar {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    outline: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.inputlabel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.inputCar:focus~.inputlabel,
+.inputCar:valid~.inputlabel {
+    top: -20px;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+}
+
+.inputl {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputCar:focus~.inputl,
+.inputCar:valid~.inputl {
+    top: -20px;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+}
+
+#despacho {
+    border: none;
+    padding: 8px;
+    border-radius: 10 px;
+    outline: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.labelDespacho {
+    margin-left: 40%;
+}
+
+.button-cadastrar {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    ;
+    border: none;
+    width: 40%;
+    background-color: #f10000;
+    margin-left: 30%;
+}
+
+.button-clear {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    width: 40%;
+    background-color: rgb(105, 105, 105);
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+
+#menu {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #FFF;
+    height: 45px;
+    padding-left: 18px;
+    border-radius: 10px;
+    margin-top: -8.5em;
+    margin-left: 420px;
+}
+
+#menu ul,
+#menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+#menu a {
+    display: block;
+    line-height: 45px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+#menu li a:hover {
+    color: #000000;
+    background: #F2F2F2;
+}
+
+#menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+
+#menu label:before {
+    font-size: 1.6em;
+    content: "\2261";
+    margin-left: 20px;
+}
+
+#menu ul.sub-menus {
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #444444;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+#menu ul.sub-menus li {
+    display: block;
+    width: 100%;
+}
+
+#menu ul.sub-menus a {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+#menu li:hover ul.sub-menus {
+    display: block
+}
+
+#menu ul.sub-menus a:hover {
+    background: #F2F2F2;
+    color: #444444;
+}
+
+.tabela{
+
+font-family: 'Pathway Gothic One', sans-serif;
+color: #060606;
+
+}
+
+td{
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #f10000;
+}
+.buttontable{
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    ;
+    border: none;
+    width: 100px;
+    background-color: #f10000;
+    margin-top: 30%;
+    margin-left: 145%;
+    
+   
+}
+
+th{
+
+padding-right: 10px;
+
+}
+
+tr{
+padding-right: 10px;
+position: center;
+}
+
+.tabela{
+
+ width: 100px;
+ height: 100px;
+font-size: auto;    
+}
+
+
